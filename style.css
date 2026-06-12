@@ -289,16 +289,20 @@ section {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 915px) {
 
     header {
-        grid-template-columns: 1fr;
+        grid-template-columns: 0.6fr;
         text-align: center;
+
+        & img {
+            width: 200px;
+        }
     }
 
     header nav ul {
         display: flex;
-        justify-content: left;
+        justify-content: center;
         flex-wrap: wrap;
         grid-template-columns: none;
     }
