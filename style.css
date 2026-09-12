@@ -77,7 +77,7 @@ section {
 
                 & img {
                     width: 100%;
-                    transform: rotate(-20deg)
+                    transform: rotate(-10deg)
                 }
 
             }
@@ -222,23 +222,23 @@ section {
                 .inform {
                     transform: translateX(calc(200px * var(--calculation)));
                     transition: 0.7s;
-                    transition-delay: 0.3s;
+                    transition-delay: 0.1s;
                 }
 
                 & h2 {
-                    transition-delay: 0.3s;
+                    transition-delay: 0.1s;
                 }
 
                 & .car-information {
-                    transition-delay: 0.5s;
+                    transition-delay: 0.1s;
                 }
 
                 & .description {
-                    transition-delay: 0.7s;
+                    transition-delay: 0.1s;
                 }
 
                 & .inform {
-                    transition-delay: 0.9s;
+                    transition-delay: 0.1s;
                 }
 
             }
@@ -250,7 +250,7 @@ section {
             transition: 0.5s;
 
             & .car-img img {
-                transform: rotate(-20deg);
+                transform: rotate(-10deg);
             }
 
             & .car-info {
