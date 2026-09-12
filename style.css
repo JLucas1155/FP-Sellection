@@ -58,6 +58,7 @@ section {
     background-image: radial-gradient(#b003b6, #770386);
     height: 100vh;
     position: relative;
+    z-index: 2;
 
     & .list {
         width: 70vw;
@@ -201,12 +202,14 @@ section {
 
 section {
 
+
     & .list {
     --calculation: 1;
         & .item {
             transform: translateX(calc(100vw * var(--calculation)));
             transition: 0.5s;
             opacity: 0;
+            
 
             & .car-img img {
                 transform: rotate(0deg);
@@ -271,14 +274,13 @@ section {
     min-height: 100vh;
     position: relative;
     z-index: 1;
-    click-events: none;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     background: black;
+    overflow: hidden;
 }
 
 .nova-secao .divcar {
