@@ -54,11 +54,15 @@ header {
     }
 }
 
+.container {
+    position: relative;
+    z-index: 10;
+}
+
 section {
     background-image: radial-gradient(#b003b6, #770386);
     height: 100vh;
     position: relative;
-    z-index: 2;
 
     & .list {
         width: 70vw;
@@ -298,6 +302,9 @@ section {
     width: 80%;
     max-width: 80%;
     transform: rotate(-90deg);
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
 }
 
 /* Fundo verde */
@@ -314,11 +321,30 @@ section {
     z-index: 1;
 }
 
+.conteudo {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
 /* Conteúdo */
 .nova-secao h1,
 .nova-secao p {
     position: relative;
     z-index: 2;
+
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+
+.nova-secao {
+    overflow: hidden;
+}
+
+.nova-secao h1,
+.nova-secao p {
+    pointer-events: none;
 }
 
 .nova-secao h1 {
