@@ -48,7 +48,7 @@ botao3.addEventListener('click', function () {alert('Área de contato em desenvo
     }
 
 
-*/animation scroll*/
+/*animation scroll*/
 gsap.registerPlugin(ScrollTrigger);
 
 gsap.to(".divcar", {
