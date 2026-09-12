@@ -46,3 +46,17 @@ botao3.addEventListener('click', function () {alert('Área de contato em desenvo
         setSlaider();
         item[active].classList.add('active');
     }
+
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.to(".divcar", {
+    x: "-100vw",
+
+    scrollTrigger: {
+        trigger: ".nova-secao",
+        start: "top top",
+        end: "bottom top",
+        scrub: 1,
+        pin: true,
+}
+});

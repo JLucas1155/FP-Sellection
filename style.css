@@ -279,6 +279,23 @@ section {
     background: black;
 }
 
+.nova-secao .divcar {
+    position: absolute;
+
+    top: 50%;
+    right: -200px; /* começa parcialmente/totalmente fora da tela */
+
+    transform: translateY(-50%);
+
+    z-index: 2;
+}
+
+.nova-secao .divcar img {
+    width: 80%;
+    max-width: 80%;
+    transform: rotate(-90deg);
+}
+
 /* Fundo verde */
 .nova-secao .divisao {
     position: absolute;
