@@ -269,12 +269,18 @@ section {
 
 .nova-secao {
     min-height: 100vh;
+    position: relative;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-.metade {
+    background: black;
+}
+
+/* Fundo verde */
+.nova-secao .divisao {
     position: absolute;
     top: 0;
     left: 0;
@@ -283,7 +289,27 @@ section {
     height: 50%;
 
     background-color: #03863e;
+
+    z-index: 1;
 }
+
+/* Conteúdo */
+.nova-secao h1,
+.nova-secao p {
+    position: relative;
+    z-index: 2;
+}
+
+.nova-secao h1 {
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.nova-secao p {
+    font-size: 1.2em;
+    text-align: center;
+    max-width: 600px;
 }
 
 @media (max-width: 915px) {
