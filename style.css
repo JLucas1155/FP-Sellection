@@ -270,6 +270,8 @@ section {
 .nova-secao {
     min-height: 100vh;
     position: relative;
+    z-index: 1;
+    click-events: none;
 
     display: flex;
     flex-direction: column;

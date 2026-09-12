@@ -57,6 +57,27 @@ gsap.to(".divcar", {
         start: "top top",
         end: "bottom top",
         scrub: 1,
-        pin: true,
 }
+});
+
+gsap.to(".nova-secao h1", {
+    y: -200,
+
+    scrollTrigger: {
+        trigger: ".nova-secao",
+        start: "top top",
+        end: "bottom top",
+        scrub: 1
+    }
+});
+
+gsap.to(".nova-secao p", {
+    y: 200,
+
+    scrollTrigger: {
+        trigger: ".nova-secao",
+        start: "top top",
+        end: "bottom top",
+        scrub: 1
+    }
 });
