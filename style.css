@@ -43,7 +43,8 @@ header {
                 transition: background-color 0.3s;
             }
             & li:hover {
-                background-color: #00d80b;
+                background-color: #00d80b2d;
+                border-radius: 30px;
             }
 
             & li.active {
@@ -60,7 +61,7 @@ header {
 }
 
 section {
-    background-image: radial-gradient(#022e00, #000000);
+    background-image: linear-gradient(#022e00, #000000);
     height: 100vh;
     position: relative;
 
@@ -105,7 +106,7 @@ section {
 
                 & h2 {
                     font-size: 3em;
-                    font-family: "league Gothic", sans-serif;
+                    font-family: "Playfair Display", serif;
                 }
 
                 & .description {
@@ -283,7 +284,7 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: black;
+    background: linear-gradient(to bottom, #000000, #022e00);
     overflow: hidden;
 }
 
@@ -312,11 +313,12 @@ section {
     position: absolute;
     top: 0;
     left: 0;
+    opacity: 0;
 
     width: 100%;
     height: 50%;
 
-    background-color: #03863e;
+    background-color: #000000;
 
     z-index: 1;
 }
@@ -332,8 +334,6 @@ section {
 .nova-secao p {
     position: relative;
     z-index: 2;
-    font-family: "league Gothic", sans-serif;
-    font-size: 5em;
     user-select: none;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -349,15 +349,18 @@ section {
 }
 
 .nova-secao h1 {
-    font-size: 3em;
+    font-size: 5em;
     text-align: center;
-    margin-bottom: 20px;
+    margin: 0 0 20px;
+    font-family: "Playfair Display", serif;
 }
 
 .nova-secao p {
     font-size: 1.2em;
     text-align: center;
     max-width: 600px;
+    margin: 0 auto;
+    font-family: "League Gothic", serif;
 }
 
 @media (max-width: 915px) {
