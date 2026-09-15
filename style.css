@@ -366,19 +366,29 @@ section {
 @media (max-width: 915px) {
 
     header {
-        grid-template-columns: 0.6fr;
+        grid-template-columns: 0.5fr;
         text-align: center;
 
         & img {
-            width: 200px;
+            width: 150px;
         }
     }
 
-    header nav ul {
-        display: flex;
+      header nav ul {
+        display: grid;
+        flex-direction: row; /* importante */
         justify-content: center;
+        align-items: center;
         flex-wrap: wrap;
-        grid-template-columns: none;
+        gap: 10px 25px;
+        padding: 0;
+        margin: 0;
+        grid-template-columns: repeat(3, 50px);
+    }
+
+    header nav ul li {
+        min-width: max-content;
+        font-size: 15px;
     }
 
     section .list .item {
@@ -454,4 +464,44 @@ section {
     .indicators ul {
         justify-content: center;
     }
+
+    .nova-secao {
+        min-height: 100vh;
+        padding: 0 20px;
+    }
+
+    .nova-secao .conteudo {
+        width: 100%;
+        max-width: 650px;
+    }
+
+    .nova-secao h1 {
+        font-size: clamp(2.5rem, 8vw, 4rem);
+        line-height: 1.05;
+        margin-bottom: 15px;
+    }
+
+    .nova-secao p {
+        font-size: 1.1rem;
+        line-height: 1.25;
+        max-width: 500px;
+    }
+
+    .nova-secao .divcar {
+        top: 55%;
+        right: -180px;
+    }
+
+    .nova-secao .divcar img {
+        width: 60%;
+        max-width: 60%;
+    }
+
+    html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 }
