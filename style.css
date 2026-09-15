@@ -493,8 +493,9 @@ section {
     }
 
     .nova-secao .divcar img {
-        width: 60%;
+        width: 20%;
         max-width: 60%;
+        x: "-100px";
     }
 
     html,
