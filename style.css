@@ -374,7 +374,16 @@ section {
         }
     }
 
-      header nav ul {
+menu .menunu{
+    position: sticky;
+    min-height: 10vh;
+    position: relative;
+    height: 10%;
+    width: 10%;
+    padding: 10px;
+}
+
+     header nav ul {
         display: grid;
         flex-direction: row; /* importante */
         justify-content: center;
@@ -384,6 +393,7 @@ section {
         padding: 0;
         margin: 0;
         grid-template-columns: repeat(3, 50px);
+        position: fixed;    
     }
 
     header nav ul li {
@@ -482,20 +492,19 @@ section {
     }
 
     .nova-secao p {
-        font-size: 1.1rem;
+        font-size: 0.9rem;
         line-height: 1.25;
         max-width: 500px;
     }
 
     .nova-secao .divcar {
-        top: 55%;
-        right: -180px;
+        top: 52%;
+        right: -125vw; /* começa parcialmente/totalmente fora da tela */
     }
 
     .nova-secao .divcar img {
         width: 20%;
         max-width: 60%;
-        x: "-100px";
     }
 
     html,
