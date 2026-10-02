@@ -363,6 +363,107 @@ section {
     font-family: "League Gothic", serif;
 }
 
+/* menu barra lateral */
+
+/* Botão mobile escondido no desktop */
+.menu-button {
+    display: none;
+
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Menu lateral */
+.menu-lateral {
+    position: fixed;
+    top: 0;
+    right: 500px;
+
+    width: 300px;
+    height: 100vh;
+
+    background: #111;
+
+    z-index: 1000;
+
+    transition: right 0.3s ease;
+}
+
+/* Quando abrir */
+.menu-lateral.ativo {
+    right: 0;
+}
+
+/* Botão X */
+.fechar-menu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    background: none;
+    border: none;
+
+    color: white;
+    font-size: 35px;
+
+    cursor: pointer;
+}
+
+/* Links */
+.menu-lateral nav {
+    margin-top: 100px;
+    display: none;
+}
+
+.menu-lateral ul {
+    list-style: none;
+    padding: 0;
+    display: none;
+}
+
+.menu-lateral li {
+    padding: 20px 30px;
+
+    color: white;
+    font-size: 20px;
+
+    cursor: pointer;
+    display: none;
+}
+
+.menu-lateral li:hover {
+    background: #222;
+}
+
+/* Fundo escuro */
+.overlay {
+    position: fixed;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.5);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: 0.3s;
+
+    z-index: 999;
+}
+
+.overlay.ativo {
+    opacity: 1;
+    visibility: visible;
+}
+
+
 @media (max-width: 915px) {
 
     header {
@@ -372,19 +473,6 @@ section {
         & img {
             width: 150px;
         }
-    }
-
-     header nav ul {
-        display: grid;
-        flex-direction: row; /* importante */
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 10px 25px;
-        padding: 0;
-        margin: 0;
-        grid-template-columns: repeat(3, 50px);
-        position: fixed;    
     }
 
     header nav ul li {
@@ -499,18 +587,6 @@ section {
         max-width: 60%;
     }
 
-    .menunu {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: 9999;
-    }
-
     html,
 body {
     width: 100%;
@@ -518,4 +594,15 @@ body {
     overflow-x: hidden;
 }
 
+}
+
+@media (max-width: 915px) {
+
+    .menu-desktop {
+        display: none;
+    }
+
+    .menu-button {
+        display: block;
+    }
 }

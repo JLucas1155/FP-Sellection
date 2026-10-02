@@ -83,3 +83,24 @@ gsap.to(".nova-secao p", {
         scrub: 1
     }
 });
+
+/*menu mobile*/
+const menuButton = document.getElementById("menuButton");
+const fecharMenu = document.getElementById("fecharMenu");
+const menuLateral = document.getElementById("menuLateral");
+const overlay = document.getElementById("overlay");
+
+menuButton.addEventListener("click", () => {
+    menuLateral.classList.add("ativo");
+    overlay.classList.add("ativo");
+});
+
+fecharMenu.addEventListener("click", () => {
+    menuLateral.classList.remove("ativo");
+    overlay.classList.remove("ativo");
+});
+
+overlay.addEventListener("click", () => {
+    menuLateral.classList.remove("ativo");
+    overlay.classList.remove("ativo");
+});

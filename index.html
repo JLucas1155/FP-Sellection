@@ -18,18 +18,43 @@
 
 <body>
 
-<section class="menunu">
-    <header>
-        <img src="./img/logo.png" alt="logo">
-        <nav>
-            <ul>
-                <li id="botaohome">Home</li>
-                <li id="botaocarros">Carros</li>
-                <li id="botaocontato">Entre em Contato</li>
-            </ul>
-        </nav>
-    </header>
-</section>
+   <header>
+    <img src="./img/logo.png" alt="Logo">
+
+    <!-- Menu normal -->
+    <nav class="menu-desktop">
+        <ul>
+            <li id="botaohome">Home</li>
+            <li id="botaocarros">Carros</li>
+            <li id="botaocontato">Entre em Contato</li>
+        </ul>
+    </nav>
+
+    <!-- Botão mobile -->
+    <button class="menu-button" id="menuButton">
+        ☰
+    </button>
+</header>
+
+<!-- Menu lateral -->
+<aside class="menu-lateral" id="menuLateral">
+
+    <button class="fechar-menu" id="fecharMenu">
+        ×
+    </button>
+
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>Carros</li>
+            <li>Contato</li>
+        </ul>
+    </nav>
+
+</aside>
+
+<!-- Fundo escuro quando o menu abrir -->
+<div class="overlay" id="overlay"></div>
 
     <!-- NOVA SEÇÃO -->
 <section class="nova-secao">
