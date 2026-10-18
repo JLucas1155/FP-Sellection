@@ -595,14 +595,3 @@ body {
 }
 
 }
-
-@media (max-width: 915px) {
-
-    .menu-desktop {
-        display: none;
-    }
-
-    .menu-button {
-        display: block;
-    }
-}
