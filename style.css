@@ -291,7 +291,7 @@ section {
 .nova-secao .divcar {
     position: absolute;
 
-    top: 50%;
+    top: 40%;
     right: -200px; /* começa parcialmente/totalmente fora da tela */
 
     transform: translateY(-50%);

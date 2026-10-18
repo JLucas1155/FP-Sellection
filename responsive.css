@@ -180,6 +180,7 @@ body {
         border: 1px solid #00d80b;
         border-radius: 14px;
         box-shadow: 0 8px 25px #0008;
+        }
     }
 
     /* Abre quando o JavaScript adiciona a classe */
@@ -209,5 +210,4 @@ body {
         background-color: #00d80b2d;
     }
 
-}
 }
