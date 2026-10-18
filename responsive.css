@@ -128,15 +128,86 @@ body {
     overflow-x: hidden;
 }
 
-header {
+@media (max-width: 915px) {
+
+    /* Mantenha aqui suas regras responsivas atuais */
+
+    /* Cabeçalho mobile */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        top: 15px;
+        gap: 12px;
+        text-align: left;
+        z-index: 1001;
+    }
+
+    header > img {
+        width: 140px;
+    }
+
+    /* Esconde a navegação horizontal */
     .menu-desktop {
         display: none;
     }
-}
 
-.dropdown-menu {
-    & .menu-mobile {
-        display: none;
+    /* Mostra o botão de menu */
+    .menu-button {
+        display: block;
+        position: static;
+        transform: none;
+        margin-left: auto;
+        padding: 4px 8px;
+        background: transparent;
+        border: none;
+        color: white;
+        font-size: 30px;
+        cursor: pointer;
+        flex-shrink: 0;
     }
+
+    /* Aparência do dropdown */
+    header .menu-mobile {
+        display: none;
+        position: absolute;
+        top: calc(100% + 12px);
+        right: 0;
+        width: min(280px, 85vw);
+        padding: 8px;
+        background: #111;
+        border: 1px solid #00d80b;
+        border-radius: 14px;
+        box-shadow: 0 8px 25px #0008;
+    }
+
+    /* Abre quando o JavaScript adiciona a classe */
+    header .menu-mobile.ativo {
+        display: block;
+    }
+
+    header .menu-mobile ul {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        list-style: none;
+        width: 100%;
+    }
+
+    header .menu-mobile ul li {
+        display: block;
+        width: 100%;
+        padding: 14px 16px;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 8px;
+    }
+
+    header .menu-mobile ul li:hover {
+        background-color: #00d80b2d;
+    }
+
 }
 }

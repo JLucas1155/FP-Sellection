@@ -362,3 +362,12 @@ section {
     margin: 0 auto;
     font-family: "League Gothic", serif;
 }
+
+/* Menu mobile: escondido no desktop */
+.menu-button {
+    display: none;
+}
+
+header .menu-mobile {
+    display: none;
+}

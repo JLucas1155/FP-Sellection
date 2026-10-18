@@ -83,3 +83,41 @@ gsap.to(".nova-secao p", {
         scrub: 1
     }
 });
+
+// Dropdown mobile
+const menuButton = document.getElementById('menuButton');
+const menuMobile = document.getElementById('menuMobile');
+
+function fecharMenuMobile() {
+    menuMobile.classList.remove('ativo');
+    menuButton.textContent = '☰';
+    menuButton.setAttribute('aria-expanded', 'false');
+    menuButton.setAttribute('aria-label', 'Abrir menu');
+}
+
+menuButton.addEventListener('click', () => {
+    const aberto = menuMobile.classList.toggle('ativo');
+
+    menuButton.textContent = aberto ? '×' : '☰';
+    menuButton.setAttribute('aria-expanded', String(aberto));
+    menuButton.setAttribute(
+        'aria-label',
+        aberto ? 'Fechar menu' : 'Abrir menu'
+    );
+});
+
+// Ações dos itens mobile
+document.getElementById('botaohome-mobile').addEventListener('click', () => {
+    alert('Você clicou no botão Home! 🎉');
+    fecharMenuMobile();
+});
+
+document.getElementById('botaocarros-mobile').addEventListener('click', () => {
+    alert('Você clicou no botão Carros! 🚗');
+    fecharMenuMobile();
+});
+
+document.getElementById('botaocontato-mobile').addEventListener('click', () => {
+    alert('Área de contato em desenvolvimento 🚧');
+    fecharMenuMobile();
+});
