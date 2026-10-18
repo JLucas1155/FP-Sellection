@@ -1,0 +1,131 @@
+@media (max-width: 915px) {
+
+    header {
+        grid-template-columns: 0.5fr;
+        text-align: center;
+
+        & img {
+            width: 150px;
+        }
+    }
+
+    header nav ul li {
+        min-width: max-content;
+        font-size: 15px;
+    }
+
+    section .list .item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    section .list .item .car-img {
+        position: relative;
+        width: 100%;
+        top: 0;
+        transform: none;
+    }
+
+    section .list .item .car-img img {
+        width: 100%;
+        max-width: 300px;
+        transform: rotate(0deg);
+    }
+
+    section .list .item .car-info {
+        position: relative;
+        width: 100%;
+        right: 0;
+        height: auto;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    section .list .item .car-info .description {
+        text-align: center;
+        max-width: 90%;
+    }
+
+    .arrow {
+        position: absolute;
+        width: 100%;
+        top: auto;
+        bottom: 120px;
+        left: 0;
+        transform: none;
+        padding: 0 20px;
+    }
+
+    .arrow button {
+        width: 40px;
+        height: 40px;
+    }
+
+    .arrow button img {
+        width: 20px;
+    }
+
+    .indicators {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        top: auto;
+        bottom: 40px;
+        left: 0;
+        transform: none;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .indicators .number {
+        font-size: 2em;
+    }
+
+    .indicators ul {
+        justify-content: center;
+    }
+
+    .nova-secao {
+        width: 100%;
+        height: 400px;
+        padding: 0 20px;
+    }
+
+    .nova-secao .conteudo {
+        width: 100%;
+        max-width: 650px;
+    }
+
+    .nova-secao h1 {
+        font-size: clamp(2.5rem, 8vw, 4rem);
+        line-height: 1.05;
+        margin-bottom: 15px;
+    }
+
+    .nova-secao p {
+        font-size: 0.9rem;
+        line-height: 1.25;
+        max-width: 500px;
+    }
+
+    .nova-secao .divcar {
+        top: 52%;
+        right: -125vw; /* começa parcialmente/totalmente fora da tela */
+    }
+
+    .nova-secao .divcar img {
+        width: 20%;
+        max-width: 60%;
+    }
+
+    html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+}
