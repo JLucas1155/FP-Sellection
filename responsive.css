@@ -1,4 +1,4 @@
-@media (max-width: 915px) {
+@media (max-width: 480px) {
 
     header {
         grid-template-columns: 0.5fr;
@@ -128,4 +128,15 @@ body {
     overflow-x: hidden;
 }
 
+header {
+    .menu-desktop {
+        display: none;
+    }
+}
+
+.dropdown-menu {
+    & .menu-mobile {
+        display: none;
+    }
+}
 }
